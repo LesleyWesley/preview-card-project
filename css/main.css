@@ -25,7 +25,6 @@ body {
   align-items: center;
   flex-flow: row wrap;
   border-radius: 10px;
-  background: green;
   overflow: hidden;
 }
 
@@ -94,6 +93,11 @@ a {
   justify-content: center;
   align-items: center;
   flex-flow: nowrap;
+  width: 100%;
+}
+
+.attribution a {
+  padding: 0 5px;
 }
 
 a:hover {
@@ -120,8 +124,59 @@ a:hover {
 
     p {
       font-size: 1em;
-      line-height: 2em;
+      line-height: 1.9em;
     }
 
+}
+
+/*===============================================
+
+    SMALL DESKTOP STYLING
+
+================================================*/
+
+
+@media only screen and (min-width: 1024px) {
+
+  .card-container {
+    width: 80%;
+  }
+
+  section {
+    width: 33.3%;
+  }
+
+}
+
+
+/*=============================================
+
+      LARGE DESKTOP STYLING
+
+===============================================*/
+
+@media only screen and (min-width: 1440px) {
+
+    .card-container {
+      margin: 140px 0;
+      width: 65%;
+    }
+
+    section .content-container {
+      width: 70%;
+    }
+
+    h2 {
+      font-size: 2.75em;
+    }
+
+    p {
+      margin-bottom: 80px;
+    }
+
+    a {
+      font-size: 1em;
+      padding: 12px 25px;
+    }
 
 }
